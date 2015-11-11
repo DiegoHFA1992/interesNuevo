@@ -4,8 +4,12 @@
 // al tiempo (t), y a la tasa de interés (i) :
 //I = C · i · t
 
-
-public static double calcularInter(argumentos){
+public class Interes{
+public static double calcularInteres(double capital, double tiempo, double tasaInteres){
    //código para calcular el interes
    //return interes
+   double interes = capital*tiempo*tasaInteres;
+   return interes;
+   
+}
 }

@@ -16,8 +16,10 @@ public class TesInteres{
 		double capital = sc.nextDouble();
 		double tiempo = sc.nextDouble();
 		double tasaInteres = sc.nextDouble();
-		double calculo=Interes.calcularInteres(capital, tiempo, tasaInteres);
-		System.out.printf("el interes es : "+calculo);
-		//System.out.printf("calculo resultante %.2f/n," calculo);
+		double calculoInteresSimple=Interes.calcularInteres(capital, tiempo, tasaInteres);
+
+		System.out.printf("calculo resultante %.2f/n" ,calculoInteresSimple);
+		double calculoInteresCompuesto = interesCompuesto.calcularInteresCompuesto(capital, tiempo, tasaInteres);
+		System.out.printf("%s %.3f%/n" , "calculo relsultante", calculoInteresCompuesto);
    }
 }
